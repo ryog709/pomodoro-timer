@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">🍅 ポモドーロタイマー</h1>
+        </header>
+        <main class="main">
+            <div class="timer">
+                <div class="timer__mode">
+                    <span class="timer__mode-text" id="modeText">作業時間</span>
+                </div>
+                <div class="timer__display">
+                    <span class="timer__time" id="timeDisplay">25:00</span>
+                </div>
+                <div class="timer__progress">
+                    <div class="timer__progress-bar" id="progressBar"></div>
+                </div>
+                <div class="timer__controls">
+                    <button class="btn btn--primary" id="startBtn">スタート</button>
+                    <button class="btn btn--secondary" id="pauseBtn">一時停止</button>
+                    <button class="btn btn--tertiary" id="resetBtn">リセット</button>
+                </div>
+                <div class="timer__info">
+                    <div class="timer__session">
+                        <span class="timer__session-label">セッション</span>
+                        <span class="timer__session-count" id="sessionCount">1</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">集中して頑張りましょう！✨</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
